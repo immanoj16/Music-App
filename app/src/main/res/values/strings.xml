@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">My Music</string>
+    <string name="tracks">Tracks</string>
+    <string name="artists">Artists</string>
+    <string name="albums">Albums</string>
+    <string name="genres">Genres</string>
+    <string name="playlists">Playlists</string>
+    <string name="folders">Folders</string>
+    <string name="playing">Now Playing</string>
+    <string name="song_name">Song Name</string>
+    <string name="artist_name">Artist Name</string>
+    <string name="album_name">Album Name</string>
+</resources>
