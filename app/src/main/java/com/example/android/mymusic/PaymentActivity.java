@@ -1,8 +1,13 @@
 package com.example.android.mymusic;
 
-/**
- * Created by KANHU on 30-07-2017.
- */
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 
-public class PaymentActivity {
+public class PaymentActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_payment);
+    }
 }

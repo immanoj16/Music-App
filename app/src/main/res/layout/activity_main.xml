@@ -7,7 +7,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        <HorizontalScrollView
             android:id="@+id/scrollBar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -35,19 +35,15 @@
                         android:text="@string/artists" />
 
                     <TextView
-                        android:id="@+id/genres"
-                        style="@style/barStyle"
-                        android:text="@string/song_detail" />
-
-                    <TextView
                         android:id="@+id/playlists"
                         style="@style/barStyle"
                         android:text="@string/playlists" />
 
                     <TextView
-                        android:id="@+id/folders"
+                        android:id="@+id/payment"
                         style="@style/barStyle"
                         android:text="@string/payment" />
+
                 </TableRow>
             </TableLayout>
         </HorizontalScrollView>
@@ -81,8 +77,8 @@
             </LinearLayout>
 
             <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:src="@drawable/ic_more_vert" />
 
@@ -117,8 +113,8 @@
             </LinearLayout>
 
             <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:src="@drawable/ic_more_vert" />
 

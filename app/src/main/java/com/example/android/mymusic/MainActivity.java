@@ -3,6 +3,7 @@ package com.example.android.mymusic;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -15,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Find the View that shows the Tracks
         final TextView tracksView = (TextView) findViewById(R.id.tracks);
+        Log.v("MainActivity", "It is from tracks activity");
 
         // Set a clickListenter on that View
         tracksView.setOnClickListener(new View.OnClickListener() {
@@ -25,7 +27,6 @@ public class MainActivity extends AppCompatActivity {
 
                 // Start the new activity
                 startActivity(tracksIntent);
-                //tracksView.setBackgroundResource(R.color.colorBar);
             }
         });
 
@@ -41,7 +42,6 @@ public class MainActivity extends AppCompatActivity {
 
                 // Start the new activity
                 startActivity(albumsIntent);
-                //tracksView.setBackgroundResource(R.color.colorBar);
             }
         });
 
@@ -57,59 +57,41 @@ public class MainActivity extends AppCompatActivity {
 
                 // Start the new activity
                 startActivity(artistsIntent);
-                //tracksView.setBackgroundResource(R.color.colorBar);
             }
         });
 
-        // Find the View that shows the Genres
-        final TextView genresView = (TextView) findViewById(R.id.genres);
+        // Find the View that shows the Artists
+        final TextView playlistView = (TextView) findViewById(R.id.playlists);
 
         // Set a clickListenter on that View
-        genresView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                // Create a new intent to open the {@link GenresActivity}
-                Intent genresIntent = new Intent(MainActivity.this, GenresActivity.class);
-
-                // Start the new activity
-                startActivity(genresIntent);
-                //tracksView.setBackgroundResource(R.color.colorBar);
-            }
-        });
-
-        // Find the View that shows the Playlists
-        final TextView playlistsView = (TextView) findViewById(R.id.playlists);
-
-        // Set a clickListenter on that View
-        playlistsView.setOnClickListener(new View.OnClickListener() {
+        playlistView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 // Create a new intent to open the {@link PlaylistsActivity}
-                Intent playlistsIntent = new Intent(MainActivity.this, PlaylistsActivity.class);
+                Intent playlistIntent = new Intent(MainActivity.this, PlaylistsActivity.class);
 
                 // Start the new activity
-                startActivity(playlistsIntent);
-                //tracksView.setBackgroundResource(R.color.colorBar);
+                startActivity(playlistIntent);
             }
         });
 
-        // Find the View that shows the Folders
-        final TextView foldersView = (TextView) findViewById(R.id.folders);
+
+        // Find the View that shows the Playlists
+        final TextView paymentView = (TextView) findViewById(R.id.payment);
 
         // Set a clickListenter on that View
-        foldersView.setOnClickListener(new View.OnClickListener() {
+        paymentView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Create a new intent to open the {@link FoldersActivity}
-                Intent foldersActivity = new Intent(MainActivity.this, FoldersActivity.class);
+                // Create a new intent to open the {@link PaymentActivity}
+                Intent paymentIntent = new Intent(MainActivity.this, PaymentActivity.class);
 
                 // Start the new activity
-                startActivity(foldersActivity);
-                //tracksView.setBackgroundResource(R.color.colorBar);
+                startActivity(paymentIntent);
             }
         });
 
-        View firstSongView = findViewById(R.id.linearLayout1);
+        final View firstSongView = findViewById(R.id.linearLayout1);
 
         firstSongView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -122,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        View secondSongView = findViewById(R.id.linearLayout2);
+        final View secondSongView = findViewById(R.id.linearLayout2);
 
         secondSongView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -134,5 +116,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(secondSongIntent);
             }
         });
+
     }
 }
