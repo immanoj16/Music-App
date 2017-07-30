@@ -7,15 +7,17 @@
     android:orientation="vertical"
     tools:context="com.example.android.mymusic.TracksActivity">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/music_library"
-            android:layout_marginBottom="16dp"
-            style="@style/headingStyle" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/music_library"
+        android:layout_marginBottom="16dp"
+        style="@style/headingStyle" />
 
-        <view
-            android:layout_width="match_parent"
-            android:layout_height="2dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/darker_gray">
+    </View>
 
 </LinearLayout>

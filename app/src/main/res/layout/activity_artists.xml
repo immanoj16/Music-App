@@ -18,9 +18,11 @@
             android:text="@string/artist_screen"
             style="@style/headingStyle" />
 
-        <view
+        <View
             android:layout_width="match_parent"
-            android:layout_height="2dp" />
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray">
+        </View>
 
     </LinearLayout>
 

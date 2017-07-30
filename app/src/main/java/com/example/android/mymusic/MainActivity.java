@@ -3,7 +3,6 @@ package com.example.android.mymusic;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -16,7 +15,6 @@ public class MainActivity extends AppCompatActivity {
 
         // Find the View that shows the Tracks
         final TextView tracksView = (TextView) findViewById(R.id.tracks);
-        Log.v("MainActivity", "It is from tracks activity");
 
         // Set a clickListenter on that View
         tracksView.setOnClickListener(new View.OnClickListener() {
@@ -116,6 +114,5 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(secondSongIntent);
             }
         });
-
     }
 }

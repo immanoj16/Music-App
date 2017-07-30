@@ -42,7 +42,7 @@
                     <TextView
                         android:id="@+id/payment"
                         style="@style/barStyle"
-                        android:text="@string/payment" />
+                        android:text="@string/premium" />
 
                 </TableRow>
             </TableLayout>
