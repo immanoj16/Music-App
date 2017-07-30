@@ -23,12 +23,8 @@
             android:label="@string/artists" />
         <activity android:name=".PlayingActivity"
             android:label="@string/playing" />
-        <activity android:name=".GenresActivity"
-            android:label="@string/genres" />
         <activity android:name=".PlaylistsActivity"
             android:label="@string/playlists" />
-        <activity android:name=".FoldersActivity"
-            android:label="@string/folders" />
     </application>
 
 </manifest>

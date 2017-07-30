@@ -37,7 +37,7 @@
                     <TextView
                         android:id="@+id/genres"
                         style="@style/barStyle"
-                        android:text="@string/genres" />
+                        android:text="@string/song_detail" />
 
                     <TextView
                         android:id="@+id/playlists"
@@ -47,7 +47,7 @@
                     <TextView
                         android:id="@+id/folders"
                         style="@style/barStyle"
-                        android:text="@string/folders" />
+                        android:text="@string/payment" />
                 </TableRow>
             </TableLayout>
         </HorizontalScrollView>
